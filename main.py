@@ -1,7 +1,7 @@
 # ---------------------------------------------------------------------------- #
 #                                                                              #
 # 	Module:       main.py                                                      #
-# 	Author:       Thomas Maynard                                               #
+# 	Author:       Jonah Levine                                                 #
 # 	Created:      9/11/2025, 2:50:28 PM                                        #
 # 	Description:  V5 project                                                   #
 #                                                                              #
@@ -20,8 +20,6 @@ motor2 = Motor(Ports.PORT2)
 motor3 = Motor(Ports.PORT11)
 motor4 = Motor(Ports.PORT12)
 
-IntakemotorR = Motor(Ports.PORT6)
-IntakemotorL = Motor(Ports.PORT7)
 Conveyormotor_A = Motor(Ports.PORT14)
 Conveyormotor_B = Motor(Ports.PORT15)
 Conveyormotor_C = Motor(Ports.PORT16)
@@ -345,4 +343,5 @@ def autonomous():
 
 # Construct a Competition Control object "competition"
 # with the Competition class.
+
 competition = Competition(driver, autonomous)
